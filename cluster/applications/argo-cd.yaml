@@ -9,7 +9,7 @@ spec:
   project: production
   source:
     path: cluster/argo-cd/base
-    repoURL: https://github.com/jperson/argo-test
+    repoURL: https://github.com/jperson/argo-test.git
     targetRevision: HEAD
   destination:
     server: https://kubernetes.default.svc

@@ -1,18 +1,19 @@
 apiVersion: argoproj.io/v1alpha1
 kind: Application
 metadata:
-  name: argo-workflows
+  name: production
   namespace: argocd
   finalizers:
     - resources-finalizer.argocd.argoproj.io
 spec:
-  project: production
+  project: applications
   source:
-    path: cluster/argo-workflows/base
     repoURL: https://github.com/jperson/argo-test.git
     targetRevision: HEAD
+    path: production
   destination:
     server: https://kubernetes.default.svc
+    namespace: production
   syncPolicy:
     automated:
       selfHeal: true

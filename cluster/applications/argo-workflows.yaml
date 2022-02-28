@@ -6,7 +6,7 @@ metadata:
   finalizers:
     - resources-finalizer.argocd.argoproj.io
 spec:
-  project: production
+  project: cluster
   source:
     path: cluster/argo-workflows/base
     repoURL: https://github.com/jperson/argo-test.git

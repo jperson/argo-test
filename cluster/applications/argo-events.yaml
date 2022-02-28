@@ -8,7 +8,7 @@ metadata:
 spec:
   project: production
   source:
-    path: argo-events/base
+    path: cluster/argo-events/base
     repoURL: https://github.com/jperson/argo-test
     targetRevision: HEAD
   destination:

@@ -8,7 +8,7 @@ metadata:
 spec:
   project: production
   source:
-    path: argo-workflows/base
+    path: cluster/argo-workflows/base
     repoURL: https://github.com/jperson/argo-test
     targetRevision: HEAD
   destination:

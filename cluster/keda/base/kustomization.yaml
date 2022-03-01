@@ -3,5 +3,4 @@ kind: Kustomization
 
 namespace: keda
 resources:
-- namespace.yaml
 - https://github.com/kedacore/keda/releases/download/v2.6.1/keda-2.6.1.yaml

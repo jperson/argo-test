@@ -1,29 +1,29 @@
- apiVersion: argoproj.io/v1alpha1
- kind: EventSource
- metadata:
-   name: github
- spec:
-   service:
-     ports:
-     - port: 3000
-       targetPort: 3000
-   github:
-     argo-test:
-       owner: jperson
-       repository: argo-test
-       webhook:
-         endpoint: /webhook
-         port: "3000"
-         method: POST
-         url: https://githooks.jperson.net
-       events:
-         - "*"
-       apiToken:
-         name: gh-secret
-         key: token
-       insecure: true
-       active: true
-       contentType: json
+apiVersion: argoproj.io/v1alpha1
+kind: EventSource
+metadata:
+  name: github
+spec:
+  service:
+    ports:
+    - port: 3000
+      targetPort: 3000
+  github:
+    argo-test:
+      owner: jperson
+      repository: argo-test
+      webhook:
+        endpoint: /webhook
+        port: "3000"
+        method: POST
+        url: https://githooks.jperson.net
+      events:
+        - "*"
+      apiToken:
+        name: gh-secret
+        key: token
+      insecure: true
+      active: true
+      contentType: json
 ---
 apiVersion: networking.k8s.io/v1
 kind: Ingress

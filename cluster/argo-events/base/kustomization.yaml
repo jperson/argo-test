@@ -5,4 +5,6 @@ namespace: argo-events
 resources:
 - namespace.yaml
 - gh-webhook-secret.yaml
+- event-bus.yaml
+- gh-webhook-events.yaml
 - https://raw.githubusercontent.com/argoproj/argo-events/v1.6.1/manifests/install.yaml

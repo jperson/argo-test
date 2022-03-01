@@ -33,6 +33,8 @@ metadata:
     kubernetes.io/ingress.class: "nginx"
     ingress.kubernetes.io/ssl-redirect: "false"
     nginx.ingress.kubernetes.io/ssl-redirect: "false"
+status:
+  loadBalancer: {}
 spec:
   rules:
   - host: githooks.jperson.net

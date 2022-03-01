@@ -4,5 +4,4 @@ kind: Kustomization
 namespace: argo-events
 resources:
 - namespace.yaml
-- ghwebhooksecret.yaml
 - https://raw.githubusercontent.com/argoproj/argo-events/v1.6.1/manifests/install.yaml

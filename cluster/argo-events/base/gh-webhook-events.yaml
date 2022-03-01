@@ -19,7 +19,7 @@
        events:
          - "*"
        apiToken:
-         name: gh-webhook
+         name: gh-secret
          key: token
        insecure: true
        active: true

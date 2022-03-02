@@ -4,7 +4,14 @@ kind: Kustomization
 namespace: argocd
 resources:
 - namespace.yaml
-- https://raw.githubusercontent.com/argoproj/argo-cd/v2.2.5/manifests/install.yaml
-  #- https://raw.githubusercontent.com/argoproj/argo-cd/v2.2.5/manifests/ha/install.yaml
+- argocd_v2.2.5.yaml
+#- https://raw.githubusercontent.com/argoproj/argo-cd/v2.2.5/manifests/install.yaml
+#- https://raw.githubusercontent.com/argoproj/argo-cd/v2.2.5/manifests/ha/install.yaml
+
+# data:
+#   resource.customizations.health.networking.k8s.io_Ingress: |
+#     hs = {}
+#     hs.status = "Healthy"
+#     return hs
 
 

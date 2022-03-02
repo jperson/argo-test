@@ -19,6 +19,9 @@ spec:
       events:
         - "*"
       apiToken:
+        name: github-access
+        key: token
+      webhookSecret:
         name: gh-secret
         key: token
       insecure: true
